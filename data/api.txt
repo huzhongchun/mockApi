@@ -1,2 +1,1 @@
-/path/a {"data":"hhh","status":1}END
-/path/b/c {"key1":"value","key2":1}
+/api/chicken/page/ac

@@ -5,6 +5,7 @@ var DefaultLayout = require('./layouts/default');
 var ApiListPage = createReactClass({
   render: function() {
   	var items = this.props.json_list.map(function (item) {
+  	    if(item)
             return (
                 <li key={item.toString()}>
                     <a href={item}>{ item }</a>
