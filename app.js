@@ -11,6 +11,16 @@ app.engine('jsx', reactViews.createEngine());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
+//允许跨域请求
+app.all('*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, x_thefair_ua");
+    res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+    res.header("X-Powered-By",' 3.2.1');
+    next();
+});
+
 app.get('/', function (req, res, next) {
   res.render('index', { title:'admin',msg: "Mock服务"});
 });
