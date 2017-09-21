@@ -9,13 +9,13 @@
 * 开发中一个接口可能有好几种返回值，对应不同的case，怎样才能测试到所有的case呢？可以用这个工具配置好每个case的返回值json，快速测试好所有case
 
 ## 安装方法
-* git clone git@github.com:heimashi/easy_mock_api.git
+* git clone git@github.com:huzhongchun/mockApi.git
 * npm install
 * npm start  
   Done! 访问 http://localhost:3000
  
 * 如果在生产环境中部署应用，可以采用[forever](https://github.com/foreverjs/forever)工具,步骤是：
-  * git clone git@github.com:heimashi/easy_mock_api.git
+  * git clone git@github.com:huzhongchun/mockApi.git
   * npm install
   * npm install forever -g
   * forever start app.js
