@@ -26,3 +26,4 @@
 ## 改动
 * api数据存储在对应path路径的文件下，统一文件名为data.json
 * api.txt仅存储api的path列表
+* 增加跨域支持
