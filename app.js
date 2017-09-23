@@ -86,8 +86,10 @@ function updateRouterList() {
 
 
 function appendRouterList(url_path) {
-    if(!_apiRouterListArray.includes(url_path))
-        fs.appendFileSync(__dirname + '/data/api.txt','\n'+url_path);
+    if(!_apiRouterListArray.includes(url_path)) {
+        fs.appendFileSync(__dirname + '/data/api.txt', '\n' + url_path);
+        _apiRouterListArray.push(url_path);
+    }
 
 }
 

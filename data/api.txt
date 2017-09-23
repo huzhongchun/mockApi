@@ -1,2 +1,0 @@
-/api/chicken/pay/pass_pay
-/api/chicken/page/get_available_item_list

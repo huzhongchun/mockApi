@@ -16,7 +16,7 @@ var ApiListPage = createReactClass({
       <DefaultLayout title={this.props.title}>
 	      <br/>
 	      <h2>接口列表</h2>
-        <div >{items}</div>
+        <ul >{items}</ul>
         <br/>
         <a href="/">返回首页</a>
       </DefaultLayout>
