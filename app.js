@@ -80,7 +80,6 @@ function updateRouterList() {
                     res1.json(JSON.parse(data));
                 })
         });
-        console.log(apiArray);
     });
 }
 
@@ -132,7 +131,6 @@ function mkdir(pos, dirArray,_callback){
 //创建目录结构
 function mkdirs(dirpath,_callback) {
     let dirArray = dirpath.replace(/^\//,'').split('/');
-    console.log(dirArray);
     fs.exists( dirpath ,function(exists){
         if(!exists){
             mkdir(0, dirArray,function(){
